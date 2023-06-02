@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>practice1</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                body{
+                    margin:0px;
+                    padding:0px;
+                }
+                .nav-cantainer{
+                    background-color: black;
+                    width:100%;
+                    padding:10px;
+                    padding-right:20px;
+                    padding-left: 20px;;
+                    max-height: 100%;
+                    min-height: fit-content;
+                    display:none;
+                }
+                nav{
+                    width:100%;
+                }
+
+                .nav-cantainer li{
+                    list-style-type:none;
+                    margin-top:20px;
+                    width:100%;
+                }
+                .nav-cantainer a:hover{
+                   color:#000000;
+                   background-color: rgb(225, 255, 0);
+                   width:100%;
+                   border-radius: 5px;
+                }
+                .nav-cantainer a{
+                    text-decoration: none;
+                    font-size:20px;
+                    color:rgb(182, 182, 182);
+                    padding:10px;
+                    width:100%;
+                }
+                .header-cantainer{
+                    background-color: rgb(235, 3, 57);
+                    height: 50px;
+                }
+                .header-cantainer i{
+                    font-size:30px;
+                    margin:10px;
+                    color:#fff;
+                }
+                .nav-cantainer i{
+                    color:#fff;
+                    float:right;
+                    font-size:25px;
+                }
+                .header-cantainer label{
+                    font-size:25px;
+                    color:#fff;
+                    margin-bottom: 10px;
+                }
+                #user{
+                    float: right;
+                }
+
+
+            </style>
+        </head>
+        <body>
+            <nav class="nav-cantainer" id="navs">
+                <li><i class="fa fa-close" onclick="Close()"></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">New Trends</a></li>
+                <li><a href="#">Contact</a></li>
+            </nav>
+            <div class="header-cantainer" id="head">
+                <i class="fa fa-user" id="opens" onclick="navOpen()"></i>
+                <label>Restaurant</label>   
+
+                <i class="fa fa-user" id="user">cart</i>
+                
+            </div>
+            <script>
+                function navOpen() {
+                    document.getElementById("navs").style.display="block";
+                    document.getElementById("head").style.display="none";
+                }
+                function Close() {
+                    document.getElementById("navs").style.display="none";
+                    document.getElementById("head").style.display="block";
+                }
+            </script>
+        </body>
+    </html>

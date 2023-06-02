@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>Be Practicle</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                *{
+                    margin:0;
+                    padding:0;
+                    box-sizing: border-box;
+                }
+                body{
+                    margin:0;
+                    padding:0;
+                    background-color: #050404;
+                    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+                }
+                .block1{
+                   margin-left: 10px;
+                   background: linear-gradient(#84069d,#190ca7);
+                    
+                }
+                .block1, .block2,.block3,.block4{
+                    width:30px;
+                    height:90px;
+                    border-top:60px solid #050404;
+                    color:#fff;
+                    display: inline-block;
+                }
+                .block2{
+                    border-top:40px solid  #050404;
+                    transition: 0.5s;
+                    background: linear-gradient(#FF512F, #DD2476);
+                    
+                }
+                .block3{
+                    border-top:20px solid #050404;
+                    background: linear-gradient(#11998E,#38EF7D);
+                }
+                .block4{
+                    border-top:5px solid #050404;
+                    background: linear-gradient(#009245,#FCEE21);
+                }
+                .page-container{
+                    height: 100vh;
+                }
+                .content{
+                    font-size:20px;
+                    display: none;
+                }
+                .content label{
+                    font-size: 25px;
+                    font-weight: bold;
+
+                }
+                .content p{
+                    font-size: 20px;
+                    margin-top:10px;
+                    
+                }
+                .name a{
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-left: 20px;
+                    background: -webkit-linear-gradient(#01ee24, #11deae);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .page-container h1{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    font-size:60px;
+                    color: #fff;
+                }
+                
+            </style>
+        </head>
+        <body onload="alerts();">
+
+            <header>
+                <div class="block1" id="b1">
+                    <div class="content" id="main1">
+                        <label> STEP</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, dignissimos, sapiente accusamus natus quas consequuntur sint omnis error ad consectetur at veniam quae earum nihil possimus minus nulla quaerat.</p>
+                    </div>
+                   
+
+                </div>
+                <div class="block2" id="b2">
+                    <div class="content" id="main2">
+                        <label>TO</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, dignissimos, sapiente accusamus natus quas consequuntur sint omnis error ad consectetur at veniam quae earum nihil possimus minus nulla quaerat.</p>
+                    </div>
+                   
+                </div>
+                <div class="block3" id="b3">
+                    <div class="content" id="main3">
+                        <label>NEW</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, dignissimos, sapiente accusamus natus quas consequuntur sint omnis error ad consectetur at veniam quae earum nihil possimus minus nulla quaerat.</p>
+                    </div>
+
+                </div>
+                <div class="block4" id="b4">
+                    <div class="content" id="main4">
+                        <label>CAREER</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, dignissimos, sapiente accusamus natus quas consequuntur sint omnis error ad consectetur at veniam quae earum nihil possimus minus nulla quaerat.</p>
+                    </div>
+                </div> <br>
+                <div class="name" id="title">
+                    <a href="https://be-practical.com/ " target="_blank">Be Practicle</a>
+                </div>
+               
+            </header>
+            <div class="page-container" >
+                <h1 id="title2">STEP TO NEW CAREER</h1>
+
+            </div>
+            <script>
+                function alerts(){
+                    alert("NOTE: Scroll the website to see logo animation")
+                }
+                let block1 = document.getElementById("b1");
+                let block2 = document.getElementById("b2");
+                let block3 = document.getElementById("b3");
+                let block4 = document.getElementById("b4");
+                let main1 = document.getElementById("main1");
+                let main2 = document.getElementById("main2");
+                let main3 = document.getElementById("main3");
+                let main4 = document.getElementById("main4");
+                let title2 = document.getElementById("title2");
+                let title = document.getElementById("title");
+                 window.addEventListener("scroll" , function(){
+                    value = window.scrollY;
+                    if(value>105){
+                        block1.style.transform = "translateY(550px)"
+                        block1.style.transition = "0.9s"
+                        block1.style.height = "fit-content";
+                        block1.style.width = "520px";
+                        main1.style.display = "block";
+                        title.style.display = "none";
+                        title2.style.display = "none";
+                        block1.style.marginLeft = "110px";
+                        block1.style.padding = "20px";
+                        block1.style.borderRadius = "10px";
+                        block1.style.boxShadow = "0 0 10 20 #gray";
+                        block1.style.borderLeft = "5px solid lawgreen";
+                        block1.style.borderTop = "0px solid lawgreen";
+                        block1.style.borderTop = "0px solid #050404";
+                    }
+                    else{
+                        block1.style.transform = "translateY(0px)"
+                        block1.style.height = "90px";
+                        block1.style.width = "30px";
+                        main1.style.display = "none";
+                        title.style.display = "block";
+                        title2.style.display = "block";
+                        block1.style.marginLeft = "10px";
+                        block1.style.backgroundColor = "lawngreen";
+                        block1.style.borderRadius = "0px";
+                        block1.style.borderTop = "60px solid #050404";
+                        
+                       
+                       
+                    }
+                    value = window.scrollY;
+                    if(value>105){
+                        block2.style.transform = "translateY(550px)"
+                        block2.style.transition = "0.9s"
+                        block2.style.height = "fit-content";
+                        block2.style.width = "520px";
+                        main2.style.display = "block";
+                        block2.style.marginLeft = "70px";
+                        block2.style.padding = "20px";
+                        block2.style.borderRadius = "10px";
+                        block2.style.boxShadow = "0 0 10 20 #gray";
+                        block2.style.borderLeft = "5px solid lawgreen";
+                        block2.style.borderTop = "0px solid lawgreen";
+                        block2.style.borderTop = "0px solid #050404";
+                    }
+                    else{
+                        block2.style.transform = "translateY(0px)"
+                        block2.style.height = "90px";
+                        block2.style.width = "30px";
+                        main2.style.display = "none";
+                        block2.style.marginLeft = "10px";
+                        block2.style.backgroundColor = "lawngreen";
+                        block2.style.borderRadius = "0px";
+                        block2.style.borderTop = "40px solid #050404";
+                    }
+                    if(value>105){
+                        block3.style.transform = "translateY(610px)"
+                        block3.style.transition = "0.9s"
+                        block3.style.height = "fit-content";
+                        block3.style.width = "520px";
+                        main3.style.display = "block";
+                        block3.style.marginLeft = "110px";
+                        block3.style.padding = "20px";
+                        block3.style.borderRadius = "10px";
+                        block3.style.boxShadow = "0 0 10 20 #gray";
+                        block3.style.borderLeft = "5px solid lawgreen";
+                        block3.style.borderTop = "0px solid lawgreen";
+                        block3.style.borderTop = "0px solid #050404";
+                    }
+                    else{
+                        block3.style.transform = "translateY(0px)"
+                        block3.style.height = "90px";
+                        block3.style.width = "30px";
+                        main3.style.display = "none";
+                        block3.style.marginLeft = "10px";
+                        block3.style.backgroundColor = "lawngreen";
+                        block3.style.borderRadius = "0px";
+                        block3.style.borderTop = "20px solid #050404";
+                    }
+                    if(value>105){
+                        block4.style.transform = "translateY(610px)"
+                        block4.style.transition = "0.9s"
+                        block4.style.height = "fit-content";
+                        block4.style.width = "520px";
+                        main4.style.display = "block";
+                        block4.style.marginLeft = "70px";
+                        block4.style.padding = "20px";
+                        block4.style.borderRadius = "10px";
+                        block4.style.boxShadow = "0 0 10 20 #gray";
+                        block4.style.borderLeft = "5px solid lawgreen";
+                        block4.style.borderTop = "0px solid lawgreen";
+                        block4.style.borderTop = "0px solid #050404";
+                    }
+                    else{
+                        block4.style.transform = "translateY(0px)"
+                        block4.style.height = "90px";
+                        block4.style.width = "30px";
+                        main4.style.display = "none";
+                        block4.style.marginLeft = "10px";
+                        block4.style.backgroundColor = "lawngreen";
+                        block4.style.borderRadius = "0px";
+                        block4.style.borderTop = "5px solid #050404";
+                    }
+                   
+                 })
+            </script>
+           
+
+
+        </body>
+    </html>

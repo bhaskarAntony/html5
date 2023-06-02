@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>webpage</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body{
+                    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+                    background-color: #e5f1eb;
+
+                }
+                ul{
+                    list-style-type:none;
+                    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+                
+
+                }
+                ul li {
+                    display: inline;
+                    margin:10px;
+                    font-size: 25px;
+                }
+                a{
+                    text-decoration: none;
+                    color:#000; 
+                    font-size:18px;
+                    transition: 0.5s;
+                }
+                a:hover{
+                    color:#f8f6f8;
+                    background-color: rgb(164, 7, 28);
+                    border-radius: 10px;
+                    padding: 8px;
+                }
+                .heading{
+                    font-size:30px;
+                    color: rgb(32, 2, 38);
+                    margin-right:150px;
+                }
+                .callnow{
+                    border:none;
+                    background-color: rgb(25, 24, 24);
+                    color:#fff;
+                    font-size:20px;
+                    padding:10px;
+                    border-radius: 10px;
+                    float: right;
+                    transition: 0.3s;
+
+                }
+                .callnow:hover{
+                    opacity: 0.7;
+                    border-radius: 50px;
+                }
+                .title{
+                    margin-top:100px;
+                    margin-left: 100px;
+                
+                }
+                label{
+                    font-size: 70px;
+                    font-weight: bold;
+                    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+                    color: rgb(56, 3, 66);
+                }
+                p{
+                 font-size: 24px;
+                 width:380px;
+                 letter-spacing: 1px;
+                 color: rgb(116, 115, 114);
+                }
+                .learn{
+                    border:none;
+                    font-size:23px;
+                    background-color: rgb(164, 7, 28);
+                    color:#fff;
+                    padding:10px 15px;
+                    border-radius: 30px;
+                }
+                .img{
+                    margin-left: 150px;
+                }
+              
+
+            </style>
+        </head>
+        <body>
+            <div>
+                <!--here we adding th unorder list-->
+               
+                <ul>
+                    <li class="heading">BizBud</li>
+                   <!--here we adding ancher tag inside the list items-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!--here we adding the buttom inside the list-->
+                    <li><button class="callnow">Call Now</button></li>
+                </ul>
+            </div>
+            <hr>
+            <!--here we creating the table -->
+            <table>
+                <!--here we creating the table row-->
+                <tr>
+                    <!--here we creating two table data-->
+                    <td>
+                        <div class="title" >
+                            <Label>The Power</Label> <br>
+                            <Label>of Good Advice</Label> 
+                            <p>I'm paragraph . Click here to add your own text and edit me.</p>
+                            <button class="learn"> Learn More</button>
+                            </div>
+                    </td>
+                    <td>
+                        <div class="img">
+                         <img src="https://www.swipez.in/images/product/online-website-builder.svg" alt="image" width="500" height="500">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+           
+
+        </body>
+    </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>login</title>
+            <style>
+                  body{
+                    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+                    padding:0px;
+                    background-color: aliceblue;
+                }
+                center{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                form{
+                    margin-top: 40%;
+                }
+                
+                .text{
+                    font-size: 20px;
+                    padding:10px;
+                    margin:10px;
+                    width: 400px;
+                    border: 1px solid rgb(188, 188, 188);
+                    border-radius: 5px;
+                }
+              
+                #login_btn{
+                    background-color: rgb(11, 211, 48);
+                    font-size:25px;
+                    color:#fff;
+                    border:none;
+                    outline:none;
+                    border-radius: 5px;
+                    width:425px;
+                    padding:10px;
+                    margin:10px;
+                    margin-bottom:20px;
+                }
+                .cont{
+                    background-color: #fff;
+                    width: fit-content;
+                    margin: auto;
+                    border-radius: 10px;
+                    box-shadow: 0px 5px 10px 0 #c2c2c2;
+                }
+                
+
+            </style>
+
+        </head>
+        <body>
+            
+           <center><label style="display:none; color:rgb(10, 150, 36); font-size:30px; font-weight:bold; margin:20px;" id="head">Completed...</label></center> 
+            <!--here we adding the form-->
+            <div  id="container" class="cont">
+            <form>
+                <center>Login</center>
+               <!--here we adding the input-->
+                <input type="text" placeholder="Your Name" required id="name" class="text"> <br>
+                <input type="password" placeholder="Security code" required id="pass" class="text" onfocus="passCheck()" > <br>
+                <p style="color:red; display:none; margin-left:20px; font-size:20px;" id="error" >please enter 8 charrecters to password!</p> <br>
+
+            </form>
+            <button id="login_btn" onclick="passCheck();">Login</button>
+        </div>
+            <script>
+               
+                function passCheck(){
+                    let p = document.getElementById("pass").value.length;
+                    let t = document.getElementById("name").value;
+                if( p < 8 || t==null){
+                    document.getElementById("error").style.display="block"; 
+                }
+                else{
+                    document.getElementById("error").style.display="none";
+                    alert("login Is Completed");
+                    document.getElementById("container").style.display="none";
+                    document.getElementById("head").style.display="block";
+                   
+                }
+            }
+            </script>
+       
+        </body>
+    </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice4</title>
+        <style>
+            button{
+                outline:none;
+                border:none;
+                background-color: rgb(37, 93, 12);
+                color:#fff;
+                font-size:20px;
+                padding:8px 15px;
+                border-radius:3px;
+
+            }
+            progress{
+                accent-color: rgb(240, 67, 116);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="hh"></h1>
+        <p id="pp"></p>
+        <button id="btnn" onclick="btn()">Install</button>
+        <progress id="pgrs" style="display:none"  min="0" max="100" width="500" height="100"></progress>
+        <script>
+            function btn(){
+              document.getElementById("pgrs").style.display="block";
+              let val=1;
+              if(val=1){
+                val++;
+                document.getElementById("pgrs").value = val;
+                document.getElementById("btnn").innerHTML="Installing.." + val;
+              }
+
+            }
+
+        </script>
+    </body>
+</html>

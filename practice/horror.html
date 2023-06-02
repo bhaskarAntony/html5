@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>horror</title>
+            <style>
+                *{
+                    margin:0px;
+                    padding:0px;
+                    box-sizing:border-box;
+                }
+
+                body{
+                    padding:0px;
+                    margin:0px;
+                    font-family: 'Open Sans',sans-serif;
+                }
+                .page-container{
+                    background-image: url(https://img.freepik.com/free-vector/frightening-halloween-realistic-background_33099-1052.jpg?size=626&ext=jpg&ga=GA1.2.605374227.1678352193&semt=sph);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    object-fit: cover;
+                    background-size: cover;
+                    height: 100vh;
+                    width: 100%;
+                }
+                .page-container #img1{
+                    position:absolute;
+                    right: 0px;
+                    bottom: -30px;
+                    z-index: 10;
+                }
+                .page-container #img2{
+                    position:absolute;
+                    left: 0px;
+                    bottom: -30px;
+                    z-index: 10;
+                }
+                .page-container #goast{
+                    position:absolute;
+                    bottom: -20px;
+                    left: 0px;
+                    z-index: 1;
+                    mix-blend-mode:multiply;
+                  
+                }
+                .page-container #goast2{
+                    position:absolute;
+                    bottom: -10px;
+                    right: 0px;
+                    z-index: 1;
+                    mix-blend-mode:multiply;
+                }
+                .bottom-container{
+                    height: 100vh;
+                    background-color: rgb(0, 0, 0);
+                    padding:20px;
+                    overflow: hidden;
+                }
+                .bottom-container p{
+                    font-size: 20px;
+                    color:#fff;
+
+                }
+                .bottom-container h1{
+                    color:#fff;
+                    padding-top:20px;
+                }
+                .page-container h1{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 8rem;
+                    color:#fff;
+                    text-shadow: 0 1px 100px #000;;
+                }
+                .page-container #btn{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    margin-top:100px;
+                    background-color: rgb(33, 32, 32);
+                    color:#fff;
+                    outline:none;
+                    border:none;
+                    padding:18px;
+                    font-size:20px;
+                    border-radius: 50px;
+                    box-shadow: 0px 20px 40px #000;
+                }
+            </style>
+        </head>
+        <body>
+            <!--here iam using header tag-->
+            <header>
+
+            </header>
+            <div class="page-container" id="page">
+                <!--HEREW EADDING AIMAGE ELEMENT-->
+                <img id="img1" src="https://cdn-icons-png.flaticon.com/512/12/12464.png?w=740&t=st=1678353468~exp=1678354068~hmac=b15ac7ce4c9a63de046bf64775189fb5fb2ea92f69426b92bf47e6b45712c609">
+                <img id="img2" src="https://cdn-icons-png.flaticon.com/512/12/12464.png?w=740&t=st=1678353468~exp=1678354068~hmac=b15ac7ce4c9a63de046bf64775189fb5fb2ea92f69426b92bf47e6b45712c609">
+                <img id="goast" src="https://cdn.pixabay.com/photo/2018/02/21/21/37/daemon-3171593__340.png">
+
+                <img id="goast2" src="https://cdn.pixabay.com/photo/2018/03/03/03/30/orc-3194836__340.png">
+                <div class="content">
+                    <h1 id="title">HORROR</h1>
+                    <!--here we adding abutton-->
+                    <button id="btn">PLAY WITH GOAST</button>
+
+                </div>
+
+              
+
+            </div>
+            <!--here we adding division -->
+            
+            <div class="bottom-container">
+                <h1>horror</h1>
+                <!--here we adding aparagrapgh tag-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut et itaque eius a esse repudiandae minus. Earum, ad. Libero, soluta pariatur! Impedit eaque dolorem soluta ut eum expedita eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam nulla veritatis quo autem doloremque quisquam incidunt vero eveniet maiores. Quod ullam neque dolorem exercitationem voluptatem debitis omnis, similique recusandae?</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut et itaque eius a esse repudiandae minus. Earum, ad. Libero, soluta pariatur! Impedit eaque dolorem soluta ut eum expedita eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam nulla veritatis quo autem doloremque quisquam incidunt vero eveniet maiores. Quod ullam neque dolorem exercitationem voluptatem debitis omnis, similique recusandae?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut et itaque eius a esse repudiandae minus. Earum, ad. Libero, soluta pariatur! Impedit eaque dolorem soluta ut eum expedita eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam nulla veritatis quo autem doloremque quisquam incidunt vero eveniet maiores. Quod ullam neque dolorem exercitationem voluptatem debitis omnis, similique recusandae?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut et itaque eius a esse repudiandae minus. Earum, ad. Libero, soluta pariatur! Impedit eaque dolorem soluta ut eum expedita eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam nulla veritatis quo autem doloremque quisquam incidunt vero eveniet maiores. Quod ullam neque dolorem exercitationem voluptatem debitis omnis, similique recusandae?</p>
+
+            </div>
+           
+            <script>
+                 let goast = document.getElementById("goast");
+                 let goast2 = document.getElementById("goast2");
+                 let tree1 = document.getElementById("img1");
+                 let tree2 = document.getElementById("img2");
+                 let title = document.getElementById("title");
+                window.addEventListener("scroll" , function(){
+                    value = window.scrollY;
+                    goast.style.left = value * 2 + "px";
+                    goast2.style.right = value * 3 + "px";
+                    tree1.style.right = value * 0.9 + "px";
+                    tree2.style.left = value * 0.9 + "px";
+                    title.style.marginTop = value * 0.4 + "px";
+                })
+            </script>
+        </body>
+    </html>

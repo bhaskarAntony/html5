@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>progress bars</title>
+        </head>
+        <body>
+            <!--here we adding default progress bars-->
+            <h2>Default progress bars</h2>
+            <progress style="width:100%; height:50px"></progress>
+
+            <!--here we adding static progress bars-->
+            <h2>Default progress bars</h2>
+            <progress min="1" max="100" value="80" style="width:100%; height:50px"></progress>
+
+            <!--here we adding dyynamic progress bars-->
+            <h2>Default progress bars</h2>
+            <progress  min="1" max="100" id="prgrs" style="width:100%; height:50px"></progress>
+            <p id="pp"></p>
+
+            <!--here we adding default meter bars-->
+            <h2>Default Meter bars</h2>
+            <meter style="width:100%; height:50px"></meter>
+
+            <!--here we adding static meter bars-->
+            <h2>Default Meter bars</h2>
+            <meter min="1" max="100" value="80" style="width:100%; height:50px"></meter>
+
+            <!--here we adding dyynamic meter bars-->
+            <h2>Default meter bars</h2>
+            <meter  min="1" max="100" id="met" style="width:100%; height:50px"></meter>
+            <p id="pp"></p>
+            <script>
+                 let min_p = 1;
+                function progress(){
+               
+                if(min_p <= 100){
+                    min_p++;
+                    document.getElementById("prgrs").value=min_p;
+                    document.getElementById("pp").innerHTML= "Installing..."+ min_p + "%";
+                }
+                else if(min_p1 = 100){
+                    min_p1--;
+                    document.getElementById("prgrs").value=min_p;
+                }
+                else {
+
+                }
+               
+            }
+           
+             function pro(){
+                    let min_p1 = 1;
+               
+                if(min_p1 <= 100){
+                    min_p1++;
+                    document.getElementById("met").value=min_p1;
+                }
+            }
+            setInterval("progress();", 500);
+            setInterval("pro();", 500);
+            </script>
+
+        </body>
+    </html>

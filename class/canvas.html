@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>
+                canvas
+            </title>
+        </head>
+        <body>
+
+            <body onload="draw();">
+                <svg height="250" width="500">
+                    <polygon points="220,10 300,210 170,250 123,234" style="fill:lime;stroke:purple;stroke-width:1" />
+                    Sorry, your browser does not support inline SVG.
+                  </svg>
+                <canvas id="myCanvas" width="350" height="350">
+                </canvas>
+                </body>
+
+            <script>
+            function draw() {
+        
+                var canvas = document.getElementById('myCanvas');
+                var ctx = canvas.getContext('2d');
+        
+                ctx.fillStyle = 'gray';
+                ctx.fillRect(10, 10, 60, 60);
+                ctx.fillRect(100, 10, 90, 60);
+                
+                ctx.beginPath();
+                ctx.arc(250, 40, 32, 0, 2*Math.PI);
+                ctx.fill(); 
+                
+                ctx.beginPath();
+                ctx.moveTo(10, 160);
+                ctx.lineTo(90, 160);
+                ctx.lineTo(50, 110);
+                ctx.closePath();
+                ctx.fill();         
+                
+                ctx.save();
+                ctx.scale(2, 1);
+                ctx.beginPath();
+                ctx.arc(72, 130, 25, 0, 2*Math.PI);
+                ctx.fill();
+                ctx.restore();
+                
+                ctx.beginPath();
+                ctx.arc(250, 120, 40, 0, Math.PI);
+                ctx.fill();                 
+            }
+        </script>
+        </head>
+        
+       
+    </html>

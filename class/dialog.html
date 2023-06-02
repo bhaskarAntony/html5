@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title> dialog</title>
+            <style>
+                dialog{
+                    border: none;
+                    outline: none;
+                    padding:10px;
+                    background-color: rgb(21, 250, 0);
+                    color:#fff;
+                    width:500px;
+                    margin-top:50px;
+                    font-size:20px;
+                    border-radius:10px;
+                    transition: 0.5s;
+                }
+                button{
+                    font-size:35px;
+                    background-color:rgb(192, 255, 4);
+                    border-radius:10px;
+                    outline:none;
+                    border:none;
+                    color:#fff;
+                    padding:0px 10px;
+                }
+                #btn{
+                    background-color: rgb(129, 248, 9);
+                    color:#fff;
+                    font-size:20px;
+                    border-radius:50px;
+                    outline:none;
+                    border:none;
+                    padding:10px;
+                }
+               
+            </style>
+        </head>
+        <body>
+            <!--here we adding dialog element to display the dialog in our webpage-->
+            <dialog id="dialo">
+                <!--here we adding the button-->
+                <button onclick="close_me();"> &times;</button>
+                <!--here we adding the heading element-->
+                <h1>imformation</h1>
+                <hr>
+                <!--here we adding the blockquote tag-->
+                <blockquote> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo, dicta minima ullam quas sit ipsam atque dolore, voluptatem quasi optio magni numquam. Sed libero doloribus adipisci ducimus explicabo amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugiat debitis numquam ipsam velit repudiandae aperiam. Voluptatum cupiditate, nemo totam mollitia, placeat sunt, eius voluptate eligendi accusamus atque id? Molestiae.</blockquote>
+
+            </dialog>
+            <!--here we adding onother one button to display the dialog-->
+            <button onclick="show_me();" id="btn">click me!</button>
+            <script>
+                function close_me(){
+                    document.getElementById("dialo").close();
+                    document.getElementById("btn").style.display="block";
+                }
+                function show_me(){
+                    document.getElementById("dialo").show();
+                    document.getElementById("btn").style.display="none";
+                }
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>practice7</title>
+            
+            <style>
+                 body{
+                    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+                    padding:15px;
+
+
+                }
+                header{
+                    background-color: rgb(80, 80, 222);
+                    height:50px;
+                    padding-top: 10px;
+                    border-radius: 20px 20px 0px 0px;
+
+                    
+                }
+                .logo{
+                    font-size: 30px;
+                    padding:10px;
+                    margin: 15px;
+                    color: #fff;
+                    
+                }
+                table{
+                    width:100%;
+                }
+                .td1{
+                    
+                    padding:2px;
+                    padding-left: 100px;
+                    padding-top: 30px;
+                    float: right;
+                    width:500px;
+                    text-align: center;
+                }
+                .td2{
+                    padding:2px;
+                    padding-left: 10px;
+                    padding-right: 100px;
+                    padding-top: 10px;
+                }
+                .text_default{
+                    height:30px;
+                    font-size: 18px;
+                    background-color: #fff;
+                    outline:none;
+                    border:1px solid #a3a0a0;
+                    margin-top: 10px;
+                    width: 400px;
+                }
+                .name{
+                    height:30px;
+                    font-size: 18px;
+                    background-color: #fff;
+                    outline:none;
+                    border:1px solid #a3a0a0;
+                    margin-top: 10px;
+                    width: 200px;
+                }
+                div{
+                    background-color: #ccc5c5;
+                    border-radius: 20px;
+                }
+                .btn{
+                    background-color: #2d9b36;
+                    outline:none;
+                    border: none;
+                    padding:10px 20px;
+                    width:200px;
+                    font-size:20px;
+                    font-weight: bold;
+                    color:#fff;
+                    border-radius:3px;
+                }
+
+            </style>
+        </head>
+        <body>
+            <div>
+            <header>
+                <!--this logo text-->
+                <label class="logo"><b>facebook</b></label>
+               
+            </header>
+            <!--here we adding on table to insert table rows-->
+            
+            <table>
+                <tr class="table_row">
+                    <td class="td1">
+                        <label style="color:rgb(47, 65, 138)"><b>Facebook helps you connect and share with the people in your life.</b></label> <br>
+                        <!--here we adding image-->
+                        <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" alt="image" width="400" height="400">
+                        
+                    </td>
+                    <td class="td2">
+                        <h1 style="color:rgb(35, 53, 124)">Sign up</h1>
+                        <label style="color:rgb(35, 53, 124)""><b>it's free and always will be.</b></label> <br>
+                        <!--here we adding form-->
+                        <form>
+                            <input type="text" placeholder="First name" id="name1" required class="name">
+                            <input type="text" placeholder="Last name" id="name2" required class="name"><br>
+                            <input type="email" placeholder="Email" id="email" required class="text_default"><br>
+                            <input type="tel" placeholder="Your Phone Number" id="Phone_number" required class="text_default"> <br>
+                            <input type="password" placeholder="New password" id="password" required class="text_default"> <br> <br>
+
+                            <!--here we adding month and date-->
+                            <label style="color:rgb(35, 53, 124)""><b>Birthday</b></label> <br>
+                            <input type="Month" id="month">
+                            <input type="date" id="date"> <br> <br>
+
+                            <!--here we adding  radio buttons-->
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Female</label>
+                            <input type="radio" id="female"  name="gender">
+                            <label for="male">Others</label>
+                            <input type="radio" id="others"  name="gender"> <br>
+
+                            <!--here we adding the paragraph-->
+                            <p style="width:500px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nemo sapiente consequuntur quo provident eos, cumque nam magni..</p> <br>
+                            <button class="btn">Sign Up</button>
+
+                        </form>
+                        <hr>
+                        <h3><a href="facebook_home.html"> Go Back To Home</a></h3>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        </body>
+    </html>

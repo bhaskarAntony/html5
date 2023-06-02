@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>restaurent</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                body{
+                    margin:0;
+                    font-family: 'Open Sans',sans-serif;
+                    height:100%;
+                    user-select: none;
+                }
+                header{
+                    padding:10px;
+                    color:#ffffff;
+                    font-size:25px;
+                    background-color: #121111;
+                }
+                .page-container{
+                    padding: 50px 30px;
+                    background-image: url(https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/892364894fd35bc8867dd5be/wdq-min.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+
+
+                }
+                .column{
+                    float: left;
+                    width: 25%;
+                    padding: 0 10px;
+                    margin-top:10%;
+
+                }
+                .column2{
+                    float: left;
+                    width: 50%;
+                    padding: 0 10px;
+                    margin-top: 20px;
+
+                }
+                .row {
+                    margin: 0 -5px;
+                    
+                }
+                .row::after{
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                .card{
+                   
+                    height:250px;
+                    border-radius: 20px;
+                    padding:10px;
+                    overflow: hidden;
+                    text-align: center;
+                    backdrop-filter: blur(60px);
+                }
+                .card i{
+                    font-size:70px;
+                    margin-bottom: 20px;
+                    color:rgb(209, 255, 6);
+                    width:fit-content;
+                    
+                }
+                .card label{
+                    font-size:25px;
+                   font-weight:bold;
+                   color: rgb(253, 253, 253);
+                }
+                .card p{
+                    font-size:20px;
+                    color: rgb(255, 255, 255);
+                }
+                
+                #email, #name, #message{
+                  outline:none;
+                  border: none;
+                  color:#fff;
+                  background-color: transparent;
+                  font-size:18px;
+                  width:80%;
+                  border-bottom: 2px solid rgb(209, 255, 6);
+                  padding:10px;
+                  margin-bottom:20px;
+                }
+                .btn{
+                    outline:none;
+                    border:none;
+                    font-size:18px;
+                    color: #0e0d0d;
+                    background-color: rgb(209, 255, 6);
+                    width:80%;
+                    height:50px;
+                    padding:10px 15px;
+                    margin-top:20px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+                .btn:hover{
+                    background-color: #fff;
+                    color:rgb(209, 255, 6);
+                }
+                .container label{
+                    color:rgb(209, 255, 6);
+                    font-size:20px;
+                }
+                .container2{
+                    width: 80%;
+                }
+               
+                .container2{
+                    color:#fff;
+                    font-size:20px;
+                    line-height: 40px;
+                    
+                }
+                .container2 label{
+                    font-size:40px;
+                   
+                }
+                .container2 a {
+                    font-size:40px;
+                    margin-right:20px;
+                    color:rgb(209, 255, 6);
+                   
+                }
+                footer{
+                    text-align: center;
+                    background-color: #000;
+                    color:#fff;
+                    font-size:20px;
+                    padding:30px;
+                }
+                @media screen and (max-width: 1200px) {
+                .column {
+                     width: 50%;
+                     display: block;
+                     margin-top: 0px;
+                     margin-bottom: 20px;
+                   }
+                   
+                }
+                @media screen and (max-width: 800px) {
+                .column {
+                     width: 50%;
+                     display: block;
+                     margin-top: 0px;
+                     margin-bottom: 20px;
+                   }
+                   .column2 {
+                     width: 100%;
+                     display: block;
+                     margin-bottom: 20px;
+                   }
+                   .container2{
+                    width: 100%;
+                   }
+                   .container1{
+                    width: 100%;
+                   }
+                   #email, #name, #message, .btn{
+                    width:100%;
+                   }
+                   .social-media-container{
+                    text-align: center;
+                   }
+                }
+                @media screen and (max-width: 600px) {
+                .column {
+                     width: 100%;
+                     display: block;
+                     margin-bottom: 20px;
+                   }
+                   .column2 {
+                     width: 100%;
+                     display: block;
+                     margin-bottom: 20px;
+                   }
+                   .container2{
+                    width: 100%;
+                   }
+                   .container1{
+                    width: 100%;
+                   }
+                   #email, #name, #message, .btn{
+                    width:100%;
+                   }
+                   .social-media-container{
+                    text-align: center;
+                   }
+                }
+                @media screen and (max-width: 250px) {
+                .card label {
+                    font-size: 20px;
+                    
+                   }
+                   .card p {
+                    font-size: 12px;
+                    
+                   }
+                }
+                  
+              
+
+            </style>
+        </head>
+        <body>
+            <header> <i class="fa fa-diamond"></i> Keeptouch</header>
+            <div class="page-container">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                      <i class="fa fa-address-card"></i><br>
+                      <label>Our main Office</label>
+                      <p>Chikkaballapur(city), bangalore, karnataka pincode: 560121</p>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <i class="fa fa-phone"></i><br>
+                        <label>Phone Number</label>
+                        <p>persnal number:8088773958 office number: 9606729320</p> 
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <i class="fa fa-fax"></i><br>
+                        <label>Email</label>
+                        <p>Bhaskar3958@outlook.com</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <i class="fa fa-facebook"></i><br>
+                        <label>Facebook</label>
+                        <p>Bhaksar Babu cm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column2">
+                    <div class="container">
+                      <form>
+                        <label>Email</label> <br>
+                        <input type="email" placeholder="Enter valid email address" required id="email" class=""> <br>
+
+                        <label>Name</label> <br>
+                        <input type="text" placeholder="Enter your name" required id="name"> <br>
+
+                        <label>Message</label> <br>
+                        <textarea name="mess" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea><br>
+
+                        <button class="btn">SUBMIT</button>
+                      </form>
+
+                    </div>
+                </div>
+
+                <div class="column2">
+                    <div class="container2">
+                        <label for="title">Get in touch</label><br>
+                        <p><i> <b>Homemade is proud to offer the best online cooking classes for free! Browse our upcoming virtual events, register for free to sign up!</b></i></p>
+
+                        <p>Etiam sit amet convallis erat – class aptent taciti sociosqu ad litora torquent per conubia! Maecenas gravida lacus. Lorem etiam sit amet convallis erat.
+
+                        </p>
+                        <div class="social-media-container">
+                        <a href="https://www.facebook.com/profile.php?id=100090124316314" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a> <br>
+                        <p>Image from <u>Freepik</u></p>
+                    </div>
+                   
+
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer>
+                <label>Copyright@2023</label>
+            </footer>
+        </body>
+    </html>

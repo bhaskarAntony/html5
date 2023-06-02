@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hello</title>
+   
+    <style>
+        body{
+            background-color: rgb(255, 0, 0);
+            font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+        }
+        .container{
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            color: #fff;
+        }
+        span{
+            font-size:60px;
+            font-weight:bold;
+        }
+        #main_msg{
+            font-size: 35px;
+        }
+        #quote{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="container">
+    <label id="main_msg"> Good Morning</label>
+    <blockquote id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse assumenda neque itaque at, voluptatibus quaerat perspiciatis! Saepe libero id quasi qui distinctio sint modi! Laudantium dolorem fugiat repellendus corrupti suscipit.</blockquote>
+</div>
+
+<script>
+    function display(){
+	var date = new Date();
+	var hours = date.getHours();
+    if (hours > 15 & hours < 21) {
+           document.getElementById("main_msg").innerHTML = "Good Evening!";
+           document.getElementById("quote").innerHTML = "“The day of the sun is like the day of a king. It is a promenade in the morning, a sitting on the throne at noon, a pageant in the evening.”"
+           document.getElementById("body").style.backgroundColor = "#3f0056";
+             }
+             else if(hours > 00 & hours < 12){
+                document.getElementById("main_msg").innerHTML = "Good Morning!";
+                document.getElementById("quote").innerHTML = "“When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love.”"
+                document.getElementById("body").style.backgroundColor = "#89de00";
+             }
+             else if(hours > 12 & hours < 15){
+                document.getElementById("main_msg").innerHTML = "Good Afternoon!";
+                document.getElementById("quote").innerHTML = "“f one morning I walked on top of the water across the Potomac River, the headline that afternoon would read: 'President Can't Swim.'”"
+                document.getElementById("body").style.backgroundColor = "#d80000";
+             }
+    }
+    setInterval(display, 10);
+
+ 
+</script>
+</body>
+</html>

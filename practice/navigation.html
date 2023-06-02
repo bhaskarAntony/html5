@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navigation</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+            }
+
+            li{
+                display: inline;
+                list-style-type: none;
+            }
+            li select{
+                border: none;
+                outline: none;
+                font-size:20px;
+                margin-right: 30px;
+                background-color:rgb(248, 0, 83);
+                color:aliceblue;
+                appearance: none;
+            }
+            option{
+                background-color: aliceblue;
+                color:#000;
+                padding:10px;
+            }
+             select:hover option {
+                display:block;
+                
+            }
+           
+            label{
+                font-size: 30px;
+                margin-right: 50px;
+                font-weight:bold;
+                color: aliceblue;
+            }
+            header{
+                background-color: rgb(248, 0, 83);
+                padding:10px;
+            }
+           
+
+        </style>
+    </head>
+    <body>
+        <!--here we adding the header tag-->
+        <header>
+            <nav>
+                <!--here we using the select tag inside the list tag-->
+                <li><label>MyRestaurent</label></li>
+                <li><select>
+                    <option selected disabled style="background-color:gray; color:#fff">Home</option>
+                    <option>Warrenties</option>
+                    <option>Cultural</option>
+                    <option>Upcomming </option>
+                </select></li>
+
+                <li><select>
+                    <option selected disabled style="background-color:gray; color:#fff">Services</option>
+                    <option>all services</option>
+                    <option>grand services</option>
+                    <option>human services</option>
+                </select></li>
+
+                <li><select>
+                    <option selected disabled style="background-color:gray; color:#fff">Blogs</option>
+                    <option>company blogs</option>
+                    <option>my blogs</option>
+                    <option>all blogs</option>
+                </select></li>
+
+                <li><select>
+                    <option selected disabled style="background-color:gray; color:#fff">About</option>
+                    <option>contact</option>
+                    <option>facebook</option>
+                    <option>twitter</option>
+                </select></li>
+            </nav>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Send SMS with Ozeki SMS Gateway</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <center><label>Get In Touch</label></center>
+                <input type="text" placeholder="Enter your name" id="name" required> <br>
+                <input type="email" placeholder="Enter your name" id="email" required> <br>
+                <input type="tel" placeholder="Enter your phone number" id="number" required> <br>
+                <input type="text" placeholder="Enter your message" id="message" required> <br>
+                <button>Submit</button>
+
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                let username = document.getElementById("name").value;
+                let email =  document.getElementById("email").value;
+                let phone_number =  document.getElementById("number").value;
+                let content =  document.getElementById("message").value;
+                Email.send({
+                     Host : "smtp.gmail.com",
+                     Username : "bhaksar3968@outlook.com",
+                     Password : "Bhaskar@12",
+                     To : 'rooparoopa7105@gmail.com',
+                     From :"bhaskar3958@outlook.com",
+                     Subject : "New Custumer Visited Your Website",
+                     Body : "username: " + username + ",  " + "phone number: " + phone_number + "massage: " + content
+                    }).then(
+                     message => alert(message));
+            }
+        </script>
+       
+    </body>
+</html>

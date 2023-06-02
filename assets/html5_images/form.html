@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>form</title>
+            <style>
+                body{
+                    margin:0;
+                    padding:0;
+                    font-family: 'Open Sans',sans-serif;
+                }
+                form label{
+                    font-size:18px;
+                    color:#2c2d2d
+                }
+                #name, #email{
+                    font-size: 18px;
+                    padding:10px;
+                    outline:none;
+                    border: none;
+                    border: 1px solid gray;
+                    width:300px;
+                    margin-top:5px;
+                    margin-bottom: 8px;
+
+                }
+                #submit{
+                    outline:none;
+                    border: none;
+                    padding:10px 20px;
+                    width:320px;
+                    color:#fff;
+                    background-color: #f10068;
+                    font-size:20px;
+                    border-radius: 3px;
+                }
+                .card{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    padding:10px;
+                    border-radius:10px;
+                    box-shadow: 00px 10px 20px #b4b3b3;
+                    padding-bottom:20px;
+                }
+                center{
+                    font-size:25px;
+                    color:#f10068;
+                    font-weight:bold;
+                    margin-bottom: 20px;
+                }
+                select{
+                    font-size:16px;
+                    border:none;
+                    margin-bottom: 10px;
+                    outline: none;
+                }
+                option{
+                    font-size:18px;
+
+                }
+                option:hover{
+                  background-color: #00ffb3;
+
+                }
+                progress{
+                    accent-color: #00ffb3;;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 100px;
+                    width:300px;
+                }
+
+            </style>
+        </head>
+        <body>
+            <div class="card">
+                <center>Create Account</center>
+                <!--here i using a form that holds the user data-->
+                <form onsubmit="dialog();">
+                    <!--here i using lable it is gives lable to elements-->
+                    <label>Username</label><br>
+                    <input type="text" placeholder="Enter user name" id="name" required><br>
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Enter user email" id="email" required> <br> <br>
+                   
+                    <!--here i creating a dropdown menu-->
+                    <label >Select color:</label>
+                    <select>
+                        <!--here i adding option to dropdown menu-->
+                        <option style="background-color:#00ffcc; color:#3a3737;" disabled selected>COLORS</option>
+                        <option>Red</option>
+                        <option>Green</option>
+                        <option>Blue</option>
+                    </select> <br> 
+                    <label  >Performance:</label>
+                    <progress value="50" min="0" max="100"></progress> <br> <br>
+                    <label>Skills:</label>
+                    <progress style="accent-color:rgb(132, 255, 8);" value="50" min="0" max="100"></progress> <br>
+                    <input type="checkbox" name="privacy" style="margin-bottom:2px;margin-top:8px"> <label>privacy policy.</label>
+                    <p><b>Terms And Conditions</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.<a href="#">Conditions</a></p><br>
+                    <button type="submit" id="submit">CREATE ACCOUNT</button>
+
+                </form>
+            </div>
+            <script>
+               //here i creating the function
+                function dialog(){
+                    //here i creating the variables
+                    let name = document.getElementById("name").value;
+                    let email = document.getElementById("email").value;
+                    let btn = document.getElementById("submit").value;
+                    //here i creating the alert for displaying the input fields value.
+                    alert("username: " + name +
+                     "Email: " + email + "  Thank you for submiting the form.");
+                    
+                }
+            </script>
+        </body>
+    </html>
